@@ -1,0 +1,17 @@
+INSERT INTO `TagRinde` (`id`, `CultivoModelo`, `Campo`, `Rinde`, `Fecha`) VALUES (NULL, 'Maiz', 'El_Trebol', '8,5', CURRENT_TIMESTAMP);
+
+  <mat-card class="Grafico" >
+    <mat-card-content>
+      <ngx-charts-advanced-pie-chart
+      [view]="view"
+      scheme="cool"
+      [results]="single"
+      [gradient]="gradient"
+      (select)="onSelect($event)"
+      (activate)="onActivate($event)"
+      (deactivate)="onDeactivate($event)"
+      >
+    </ngx-charts-advanced-pie-chart>
+  </mat-card-content>
+  </mat-card>
+
